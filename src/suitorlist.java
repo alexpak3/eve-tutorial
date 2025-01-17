@@ -1,16 +1,11 @@
 public class suitorlist {
     private Node HeadNode;
-    private Node LastNode;
 
 
     public suitorlist(){
         HeadNode = null;
-        LastNode = null;
     }
 
-    public Node getHeadNode(){
-        return HeadNode;
-    }
 
 
 
@@ -41,24 +36,6 @@ public class suitorlist {
 
 
 
-    public Node getNode(String str) {
-        if (HeadNode == null)
-            return null;
-        else if (HeadNode.getValue().equalsIgnoreCase(str))
-            return HeadNode;
-        else {
-            Node temp = HeadNode.getNext();
-            while (temp.getValue() != HeadNode.getValue()) {
-                if (temp.getValue().equalsIgnoreCase(str)) {
-                    break;
-                } else {
-                    temp = temp.getNext();
-                }
-
-            }
-            return temp;
-        }
-    }
 
     public Node getLastNode() {
             Node temp = HeadNode;
@@ -99,7 +76,6 @@ public class suitorlist {
                 count++;
             }
 
-//            System.out.println(temp.getValue());
             removeNode(temp.getValue());
             temp = t;
             count = 0;
