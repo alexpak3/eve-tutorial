@@ -12,10 +12,7 @@ public class Main {
         ll.addNode("Suitor 4");
         ll.addNode("Suitor 5 ");
         ll.addNode("Suitor 6");
-
-        System.out.println(ll.getNode("Suitor 6"));
-
-
+        ll.addNode("Suitor 7");
         System.out.print("before : ");
         ll.printList();
         System.out.println("after : ");

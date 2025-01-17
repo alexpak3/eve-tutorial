@@ -99,10 +99,11 @@ public class suitorlist {
                 count++;
             }
 
-            System.out.println(temp.getValue());
+//            System.out.println(temp.getValue());
             removeNode(temp.getValue());
             temp = t;
             count = 0;
+            System.out.print("remaining Suitors: ");
             printList();
         }
     }
